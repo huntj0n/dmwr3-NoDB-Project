@@ -73,7 +73,7 @@ body{
   outline: none;
   border: none;
   cursor: pointer;
-  /* display: block; */
+  display: block;
   font-size: 10px;
   color: white;
   text-transform: uppercase;
@@ -101,6 +101,14 @@ body{
   background-color: #1D2733;
   color: white;
 }
+.form{
+  height: 20%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .newSongForm{
   height: 15%;
   width: 30%;
@@ -117,4 +125,4 @@ body{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
+} 
