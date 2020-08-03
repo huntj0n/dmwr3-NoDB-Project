@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "A Hard Rain's A-Gonna Fall",
+        "artist": "Bob Dylan"
+    },
+    {
+        "id": 2,
+        "name": "Paranoid",
+        "artist": "Black Sabbath"
+    },
+    {
+        "id": 3,
+        "name": "The Wind Cries Marry",
+        "artist": "Jimi Hendrix"
+    },
+    {
+        "id": 4,
+        "name": "Gimme Shelter",
+        "artist": "The Rolling Stones"
+    },
+    {
+        "id": 5,
+        "name": "Let It Be",
+        "artist": "The Beatles"
+    },
+    {
+        "id": 6,
+        "name": "When the Levee Breaks",
+        "artist": "Led Zepplin"
+    }
+]

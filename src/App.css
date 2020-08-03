@@ -1,38 +1,112 @@
-.App {
+body{
+  height: 100vh;
+  background-color: #FCFCFA;
+  font-family: 'Roboto', sans-serif;
+}
+.App{
   text-align: center;
+  height: 100vh;
+  width: 100vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+  height: 10vh;
+  width: 100%;
+  background-color: #535B61;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-title{
+  font-size: 50px;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content-main{
+  /* height: 100%; */
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.song-list{
+  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.cards{
+  height: 90%;
+  width: 30vw;
+  color: #1D2733;
+  border: 1px solid #1D2733;
+}
+.songCard{
+  height: 75px;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #1D2733;
+  background-color: #e9e9e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.song-info{
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1D2733;
+}
+.artist{
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #1D2733;
+}
+.btn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10%;
+}
+.btn-edit, .btn-save{
+  background-color: #81B1B4;
+}
+.btn-delete, .btn-cancel{
+  background-color: #CC3E3B;
+}
+.btn-add{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 10%;
+  background-color: #1D2733;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  height: 5vh;
+  width: 100%;
+  background-color: #535B61;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
