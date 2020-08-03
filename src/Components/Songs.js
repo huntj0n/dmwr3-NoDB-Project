@@ -21,15 +21,15 @@ class Songs extends Component {
         .catch(err => console.log(err))
     }
 
-    addSong = (name) => {
-        axios.post('/api/songs', {name})
+    addSong = (name, artist) => {
+        axios.post('/api/songs', {name, artist})
         .then((response)=> {
             console.log(response)
             this.setState({songs: response.data})
         })
         .catch(err => console.log(err))
     }
-    
+
     editSong = (id, name) => {
         axios.put(`/api/songs/${id}`, {name})
         .then((response)=>{

@@ -6,10 +6,11 @@ module.exports = {
         return res.status(200).send(songs)
     },
     addSong: (req, res) => {
-        const {name} = req.body
+        const {name, artist} = req.body
         const newSong = {
             id: nextId,
             name: name, 
+            artist: artist
         }
         nextId++
         songs.push(newSong)

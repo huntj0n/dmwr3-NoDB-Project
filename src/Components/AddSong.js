@@ -4,17 +4,22 @@ export default class AddSong extends Component {
     constructor(props){
         super(props)
         this.state = {
-            name: ''
+            name: '',
+            artist: '',
+            showForm: false
         }
     }
     
-    handleChange = (value) => {
+    nameChange = (value) => {
         this.setState({name: value})
     }
+    artistChange = (value) => {
+        this.setState({artist: value})
+    }
 
-    save = () => {
-        this.props.addSong(this.state.name);
-        this.setState({name: ''})
+    save = (name, artist) => {
+        this.props.addSong(name, artist);
+        this.setState({name: '', artist: ''});
     }
 
     render(){
@@ -22,9 +27,15 @@ export default class AddSong extends Component {
             <div className="form">
                 <input 
                 value={this.state.name} 
-                onChange={(e)=> this.handleChange(e.target.value)}
+                onChange={(e)=> this.nameChange(e.target.value)}
+                placeholder="Enter Song Name"
                 />
-                <button className="btn-add" onClick={this.save}>Add Song</button>
+                <input
+                value={this.state.artist}
+                onChange={(e)=> this.artistChange(e.target.value)}
+                placeholder="Enter Artist Name"
+                />
+                <button className="btn-add" onClick={()=>this.save(this.state.name, this.state.artist)}>Add Song</button>
             </div>
         )
     }
